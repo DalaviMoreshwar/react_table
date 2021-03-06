@@ -1,20 +1,23 @@
 import { format } from "date-fns";
-
+import { ColumnFilterInput } from "./ColumnFilterInput";
 export const COLUMNS = [
   {
     Header: "Id",
     Footer: "Id",
-    accessor: "id"
+    accessor: "id",
+    Filter: ColumnFilterInput
   },
   {
     Header: "First Name",
     Footer: "First Name",
-    accessor: "first_name"
+    accessor: "first_name",
+    Filter: ColumnFilterInput
   },
   {
     Header: "Last Name",
     Footer: "Last Name",
-    accessor: "last_name"
+    accessor: "last_name",
+    Filter: ColumnFilterInput
   },
   {
     Header: "Date of Birth",
@@ -22,17 +25,20 @@ export const COLUMNS = [
     accessor: "date_of_birth",
     Cell: ({ value }) => {
       return format(new Date(value), "dd/MM/yyyy");
-    }
+    },
+    Filter: ColumnFilterInput
   },
   {
     Header: "Country",
     Footer: "Country",
-    accessor: "country"
+    accessor: "country",
+    Filter: ColumnFilterInput
   },
   {
     Header: "Phone",
     Footer: "Phone",
-    accessor: "phone"
+    accessor: "phone",
+    Filter: ColumnFilterInput
   }
 ];
 

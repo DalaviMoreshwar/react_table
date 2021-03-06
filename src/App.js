@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>React Table</h1>
-      <BasicTable />
+      {/* <BasicTable /> */}
       <SortingTable />
     </div>
   );

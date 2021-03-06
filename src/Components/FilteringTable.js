@@ -5,10 +5,17 @@ import { COLUMNS } from "./columns";
 
 import "./table.css";
 import { GlobalFilterInput } from "./GlobalFilterInput";
+import { ColumnFilterInput } from "./ColumnFilterInput";
 
 export const FilteringTable = () => {
   const columns = useMemo(() => COLUMNS, []);
   const data = useMemo(() => MOCK_DATA, []);
+
+  const defaultColumn = useMemo(() => {
+    return {
+      Filter: ColumnFilterInput
+    };
+  }, []);
 
   const {
     getTableProps, // table tag
@@ -22,7 +29,8 @@ export const FilteringTable = () => {
   } = useTable(
     {
       columns,
-      data
+      data,
+      defaultColumn
     },
     useFilters,
     useGlobalFilter

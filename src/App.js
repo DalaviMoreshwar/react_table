@@ -1,4 +1,5 @@
 import { BasicTable } from "./Components/BasicTable";
+import { ColumnHiding } from "./Components/ColumnHiding";
 import { ColumnOrder } from "./Components/ColumnOrder";
 import { FilteringTable } from "./Components/FilteringTable";
 import { PaginationTable } from "./Components/PaginationTable";
@@ -15,7 +16,8 @@ export default function App() {
       {/* <FilteringTable /> */}
       {/* <PaginationTable /> */}
       {/* <RowSelection /> */}
-      <ColumnOrder />
+      {/* <ColumnOrder /> */}
+      <ColumnHiding />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import { BasicTable } from "./Components/BasicTable";
+import { ColumnOrder } from "./Components/ColumnOrder";
 import { FilteringTable } from "./Components/FilteringTable";
 import { PaginationTable } from "./Components/PaginationTable";
 import { RowSelection } from "./Components/RowSelection";
@@ -13,7 +14,8 @@ export default function App() {
       {/* <SortingTable /> */}
       {/* <FilteringTable /> */}
       {/* <PaginationTable /> */}
-      <RowSelection />
+      {/* <RowSelection /> */}
+      <ColumnOrder />
     </div>
   );
 }
